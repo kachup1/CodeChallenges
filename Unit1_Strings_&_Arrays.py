@@ -153,3 +153,17 @@ goldilocks_approved(nums)
 
 nums = [2, 1, 3]
 goldilocks_approved(nums)
+
+def nanana_batman(x):
+
+    if x <= 0:
+        print("batman!")
+    else:
+        str = ''
+
+        while x > 0:
+            str = 'na' + str
+            x -= 1
+        print(f"{str} batman!")
+nanana_batman(4)
+

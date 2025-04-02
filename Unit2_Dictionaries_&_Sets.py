@@ -48,6 +48,7 @@ species_list = [
      "population": 84
     },
     {"name": "Javan Rhino",
+
      "habitat": "Tropical forests",
      "population": 72
     },
@@ -57,4 +58,15 @@ species_list = [
     }
 ]
 
-print(most_endangered(species_list))
+
+
+def process_numbers(nums, threshold):
+    stack = []
+    for num in nums:
+        if num < threshold:
+            stack.append(num)
+        elif num <= 10 and stack:
+            stack.pop()
+    return stack
+
+print(process_numbers([3,5,1,9,6,15], 8))
